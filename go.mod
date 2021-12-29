@@ -1,5 +1,5 @@
-module github.com/azizjon12/stats
+module github.com/azizjon12/stats/v2
 
 go 1.17
 
-require github.com/azizjon12/bank v0.0.0-20211229035559-e45c195d899f // indirect
+require github.com/azizjon12/bank/v2 v2.0.0
