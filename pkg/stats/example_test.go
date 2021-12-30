@@ -8,25 +8,52 @@ import (
 
 func ExampleAvg() {
 	payments := []types.Payment{
+		// {
+		// 	ID:       14,
+		// 	Amount:   7_00,
+		// 	Category: "shop",
+		// 	Status:   "OK",
+		// },
+		// {
+		// 	ID:       21,
+		// 	Amount:   200_00,
+		// 	Category: "restaurant",
+		// 	Status:   "FAIL",
+		// },
+		// {
+		// 	ID:       22,
+		// 	Amount:   20_00,
+		// 	Category: "cafe",
+		// 	Status:   "OK",
+		// },
 		{
 			ID:       14,
-			Amount:   5_00,
+			Amount:   10_00,
 			Category: "shop",
+			Status:   "OK",
 		},
 		{
 			ID:       21,
-			Amount:   200_00,
+			Amount:   1_00,
 			Category: "restaurant",
+			Status:   "FAIL",
 		},
 		{
 			ID:       22,
-			Amount:   20_00,
+			Amount:   0,
 			Category: "cafe",
+			Status:   "OK",
+		},
+		{
+			ID:       24,
+			Amount:   3,
+			Category: "cafe",
+			Status:   "INPROGRESS",
 		},
 	}
 
 	fmt.Println(Avg(payments))
-	// Output: 7500
+	// Output: 250
 }
 
 func ExampleTotalInCategory() {
@@ -35,16 +62,25 @@ func ExampleTotalInCategory() {
 			ID:       314,
 			Amount:   50_00,
 			Category: "cafe",
+			Status:   "OK",
 		},
 		{
 			ID:       324,
 			Amount:   70_00,
 			Category: "restaurant",
+			Status:   "OK",
 		},
 		{
 			ID:       334,
 			Amount:   100_00,
 			Category: "cafe",
+			Status:   "OK",
+		},
+		{
+			ID:       334,
+			Amount:   100_00,
+			Category: "cafe",
+			Status:   "FAIL",
 		},
 	}
 
