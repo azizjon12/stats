@@ -34,26 +34,26 @@ func ExampleAvg() {
 		},
 		{
 			ID:       21,
-			Amount:   1_00,
+			Amount:   100_00,
 			Category: "restaurant",
 			Status:   "FAIL",
 		},
 		{
 			ID:       22,
-			Amount:   0,
+			Amount:   20_00,
 			Category: "cafe",
 			Status:   "OK",
 		},
 		{
 			ID:       24,
-			Amount:   3,
+			Amount:   30_00,
 			Category: "cafe",
 			Status:   "INPROGRESS",
 		},
 	}
 
 	fmt.Println(Avg(payments))
-	// Output: 250
+	// Output: 2000
 }
 
 func ExampleTotalInCategory() {
